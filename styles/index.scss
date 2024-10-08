@@ -2,6 +2,8 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
+    box-sizing: border-box;
+
 }
 
 /* Container layout */
@@ -20,6 +22,8 @@ body, html {
     background-image: url(../images/cliff-img.png);
     background-repeat: no-repeat;
     background-size: cover;
+    text-align: center;
+    padding: 20px;
 }
 
 /* Style for the main heading */
@@ -40,6 +44,7 @@ h1 {
     letter-spacing: 6.82px;
     text-align: center;
     color: #ffffff;
+    margin: 10px 0 0;
 }
 
 /* header */
@@ -115,7 +120,8 @@ li a {
 
 .text-content {
     flex: 1;
-    max-width: 50%;
+    max-width: 100%;
+    padding: 20px;
 }
 
 .image-container {
@@ -123,6 +129,7 @@ li a {
     flex-direction: column;
     gap: 20px; 
     max-width: 40%; 
+    padding: 20px;
 }
 
 .why-us-img-house {
@@ -171,8 +178,9 @@ li a {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 40px 0;
+    padding: 40px 20;
     background-color: #333333;
+    flex-wrap: wrap;
 }
 
 .step {
@@ -181,20 +189,22 @@ li a {
     align-items: center;
     text-align: center;
     color: #ffffff;
+    padding: 20px;
 }
 
 /*Third page style*/
 .third-page {
     height: 50vh;
-    width: 100%;
+    max-width: 100%;
     background-position: center;
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
+    flex-wrap: wrap;
     background-image: url(../images/villa-img.png);
     margin: 0;
+    padding: 20px;
 }
 
 .text-content-left {
@@ -253,15 +263,16 @@ li a {
 /*Fourth page style*/
 .fourth-page {
     height: 50vh;
-    width: 100%;
+    max-width: 100%;
     background-position: center;
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
+    flex-wrap: wrap;
     background-image: url(../images/sunset-img.png);
     margin: 0;
+    padding: 20px;
 }
 
 .text-content-right {
@@ -276,14 +287,14 @@ li a {
 /*Fifth page style*/
 .fifth-page {
     height: 100vh;
-    width: 100%;
+    max-width: 100%;
     background-position: center;
     background-size: cover;
     display: flex;
     flex-direction: column; 
     align-items: center;
     justify-content: space-evenly;
-    position: relative;
+    flex-wrap: wrap;
     background-image: url(../images/backpacker-img.png);
     margin: 0;
 }
@@ -303,7 +314,7 @@ li a {
 }
 
 .text-content-center {
-    width: 50%; 
+    width: 60%; 
     background-color: #333333;
     padding: 0px;
     position: relative;
@@ -338,13 +349,13 @@ li a {
     color: #ffffff;
     font-family: "Josefin Sans", sans-serif;
     font-weight: 400;
-    max-width: 80%;
+
 }
 
 /* Footer */
 .footer {
     background-color: #232323;
-    padding: 50px 0;
+    padding: 40px 20px;
     text-align: center;  
 }
 
@@ -386,3 +397,80 @@ li a {
     font-size: 18px;
 }
 
+/*Responsiveness*/
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 8vw;
+    }
+    .mainp {
+        font-size: 3vw;
+    }
+    .second-page {
+        padding: 40px 20px;
+        flex-direction: column;
+    }
+    .dark-container{
+        flex-direction: column;
+    }
+    .fifth-page{
+        flex-direction: column;
+    }
+    .third-page{
+        flex-direction: column;
+    }
+    .fourth-page {
+        flex-direction: column;
+    }
+    .text-content-center {
+        flex-direction: column;
+    }
+    .feedback {
+        font-size: 6vw;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 10vw;
+    }
+    .mainp {
+        font-size: 4vw;
+    }
+
+    .second-page {
+        padding: 20px 10px;
+    }
+    .third-page
+    {
+        padding: 20px 10px;
+    }
+    .fourth-page
+    {
+        padding: 20px 10px;
+    }
+    .fifth-page
+    {
+        padding: 20px 10px;
+    }
+    .why-us{
+        font-size: 24px;
+    }
+    .feedback {
+        font-size: 24px;
+    }
+    .text-content-center {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .feedback-txt {
+        font-size: 12px;
+    } 
+    .spain-txt {
+        font-size: 12px;
+    }
+    .footer-content {
+        padding: 10px 0;
+    }
+}
