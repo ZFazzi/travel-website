@@ -9,6 +9,7 @@ body, html {
     min-height: 100%;
     display: flex;
     flex-direction: column;
+    margin: 0;
 }
 
 .first-page {
@@ -98,10 +99,11 @@ li a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 250px;
+    padding: 250px;   /*I know the padding is massive, but I dont know how else to fix it */
     background-image: url(../images/city-img.png);
     background-size: cover;
     background-repeat: no-repeat;
+    margin: 0;
 }
 
 .text-content {
@@ -127,8 +129,6 @@ li a {
     object-fit: cover;
     margin-left: 100px;
 }
-
-
 
 .why-us {
     font-size: 36px;
@@ -159,7 +159,7 @@ li a {
     background-color: #4358c0;
 }
 
-/* Dark Container Styles */
+/* Dark Container Style */
 .dark-container {
     display: flex;
     justify-content: space-around;
@@ -176,9 +176,94 @@ li a {
     color: #ffffff;
 }
 
-.step-by-step {
-    font-size: 18px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-family: "Aleo", serif;
+
+/*Third page style*/
+.third-page {
+    height: 50vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-image: url(../images/villa-img.png);
+    margin: 0;
+}
+
+.text-content-left {
+    max-width: 350px;
+    background-color: #232323;
+    opacity: 0.8;
+    padding: 20px;
+    position: absolute;
+    left: 10%;
+}
+
+.spain {
+    color: #ffffff;
+    font-size: 20px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 1.5px;
+}
+
+.grand-spain {
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 700;
+}
+
+.spain-txt {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+}
+
+.book-now {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    letter-spacing: 1.2px;
+    line-height: 26px;
+    color: #ffffff;
+    background-color: #5474FD;
+    border: none;
+    cursor: pointer;
+}
+
+.book-now:hover {
+    background-color: #4358c0;
+}
+
+/*Fourth page style*/
+.fourth-page {
+    height: 50vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-image: url(../images/sunset-img.png);
+    margin: 0;
+   
+}
+
+.text-content-right {
+    max-width: 350px;
+    background-color: #232323;
+    opacity: 0.8;
+    padding: 20px;
+    position: absolute;
+    right: 10%;
 }
