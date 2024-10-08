@@ -1,0 +1,92 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Container layout */
+.container {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/cliff-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Style for the main heading */
+h1 {
+    text-transform: uppercase;
+    font-size: 48px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 20%;
+}
+
+.mainp {
+    font-size: 22px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    letter-spacing: 6.82px;
+    text-align: center;
+    color: #ffffff;
+}
+
+/* Footer */
+.footer {
+    background-color: #5474FD;
+    padding: 20px 30px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+/* Logo */
+.logo {
+    text-transform: uppercase;
+    font-size: 26px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0; 
+}
+
+/* Navbar */
+.navbar {
+    text-align: right;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    display: inline-block; 
+    padding: 10px 15px;
+}
+
+li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: "Aleo", serif;
+    font-size: 20px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
