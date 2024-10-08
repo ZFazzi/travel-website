@@ -6,13 +6,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aleo&family=Josefin+Sans:wght@100..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">    
     <link rel="stylesheet" href="styles/index.css">
     <title>Safe Travel</title>
 </head>
 <body>
     <!-- First Page -->
-    <div class="container">
+    <div class="container" id="first-page">
         <div class="first-page">
             <div class="mainpage">
                 <h1>Bhromaon</h1>
@@ -22,20 +22,20 @@
         <!-- header -->
         <header class="header">
             <div class="header-content">
-                <p class="logo">Bhromaon</p>
+                <p class="logo-header">Bhromaon</p>
                 <nav class="navbar">
                     <ul>
-                        <li><a href="#">Who we are</a></li>
-                        <li><a href="#">What we do</a></li>
-                        <li><a href="#">Travel with us</a></li>
-                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#first-page">Who we are</a></li>
+                        <li><a href="#second-page">What we do</a></li>
+                        <li><a href="#third-page">Travel with us</a></li>
+                        <li><a href="#fifth-page">Contact us</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
     </div>
     <!-- Second Page -->
-    <div class="container">
+    <div class="container" id="second-page">
         <div class="second-page">
             <div class="text-content">
                 <p class="why-us">Why Choose Us?</p>
@@ -65,7 +65,7 @@
         </div>
     </div>
     <!-- Third Page -->
-     <div class="connecting-container">
+     <div class="connecting-container" id="third-page">
         <div class="container">
             <div class="third-page">
                 <div class="text-content-left">
@@ -91,19 +91,38 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container" id="fifth-page">
         <div class="fifth-page">
             <h2 class="feedback">What Our Tourists Say</h2>
             <div class="text-content-center">
                 <img src="images/hiker-img.png" alt="Hiker looking out at mountains">
-                <p class="myname">Sam Sumon</p>
-                <p class="feedback-txt"><span class="fa fa-quote-left fa-3x fa-pull-left" style="color: #6550ce;"></span>But I must explain to you how all this mistaken idea of account to 
-                    denouncing pleasure and praising pain was account  born and I 
-                    account will give you a complete account of the system</p>
+                <div class="quote-container">
+                    <p class="myname">Sam Sumon</p>
+                    <p class="feedback-txt"><span class="fa fa-quote-left fa-3x fa-pull-left" style="color: #6550ce;">
+                    </span>But I must explain to you how all this mistaken idea of account to denouncinpleasure and 
+                    praising pain  But I must explain to you how all this mistaken idea of account to nai denouncing 
+                    pleasure and praising pain was account  born and I account will give you a complete account of the 
+                    system was account  born and I account will give you a nai the complete account of the system</p>
+                </div>
             </div>
         </div>
     </div>
+  <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="logo-footer">Bhromaon</p>
+            <p class="safe-travel">Safe Travel Anywhere</p>
+            <!--Social media icons-->
+            <div class="social-icons">
+                <i class="fa-brands fa-facebook-f fa-xs" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-twitter fa-xs" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-linkedin-in fa-xs" style="color: #B197FC;"></i>
+                <i class="fa-brands fa-youtube fa-xs" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-pinterest fa-xs" style="color: #ffffff;"></i>
+            </div>
+            
 
-    
+        </div>
+    </footer>
 </body>
 </html>
